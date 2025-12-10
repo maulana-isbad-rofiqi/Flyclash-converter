@@ -1,3 +1,15 @@
-body { font-family: sans-serif; padding: 20px; }
-textarea { width:100%; height:150px; }
-pre { background:#eee; padding:10px; }
+/* simple base styles */
+:root {
+  --bg:#0f172a; --card:#071233; --muted:#94a3b8; --accent:#0ea5e9;
+  --white:#e6eef8;
+}
+html,body{height:100%}
+body{
+  margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial;
+  background:var(--bg); color:var(--white);
+}
+#fc-root{max-width:1200px;margin:18px auto;padding:18px}
+textarea,input,select,button{font-family:inherit}
+textarea{width:100%;min-height:240px;padding:10px;border-radius:8px;border:1px solid #0b1220;background:#031229;color:var(--white);resize:vertical}
+pre{white-space:pre-wrap;overflow:auto;padding:12px;border-radius:8px}
+button{cursor:pointer}
